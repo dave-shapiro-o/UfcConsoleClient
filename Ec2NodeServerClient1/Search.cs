@@ -15,7 +15,7 @@ namespace UfcConsoleClient
             using var client = new HttpClient();
             while (true)
             {
-                input = GetInput($"\n\nEnter number for search category:\n1: All Fighters\n2: for Name\n3: "
+                input = GetInput($"\n\nEnter number for search category:\n1: All Fighters\n2: Name\n3: "
                     + $"Nickname\n4: Height (inches)\n5: Height Range (inches)\n6: Weight (lbs)\n7: Weight Range (lbs)\n8: Country\n");
 
                 if (input.Equals("Q", StringComparison.OrdinalIgnoreCase)) { Environment.Exit(0); };
